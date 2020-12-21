@@ -11,22 +11,18 @@ namespace ConsoleApp
 	{
 		static void Main(string[] args)
 		{
-			List<int> number = new List<int>();
 			List<int> bubleSort = new List<int>();
 
 			Random random = new Random();
 			
 			for (int i = 0; i < 10000; i++)
-				number.Add(random.Next(1, 10));
-
-			bubleSort.AddRange(number);
-			Thread.Sleep(100);
+				bubleSort.Add(random.Next(5, 100));
 
 			Stopwatch timeBubbleSort = new Stopwatch();
 			timeBubbleSort.Start();
-			bubleSort.Sorting(SortingAlgorithms.SelectionSort, SortDirection.Descending);
+			bubleSort.Sorting(SortingAlgorithms.SelectionSort, SortDirection.Ascending);
 			timeBubbleSort.Stop();
-			bubleSort.ForEach(number => Console.Write($" {number}"));
+			//bubleSort.ForEach(number => Console.Write($" {number}"));
 
 			Console.WriteLine($"Time Bubble Sort : {timeBubbleSort.ElapsedMilliseconds} ms");
 

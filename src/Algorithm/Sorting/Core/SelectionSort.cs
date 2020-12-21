@@ -19,7 +19,7 @@ namespace Algorithm.Sorting.Core
 
 					if (typeSorting.Equals(SortDirection.Descending))
 						if (comparer.Compare(list[index], list[minIndex]) > 0)
-									minIndex = index;
+							minIndex = index;
 				}
 
 				Swap(list, minIndex, i);

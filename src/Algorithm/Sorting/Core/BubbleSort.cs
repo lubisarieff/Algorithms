@@ -8,17 +8,28 @@ namespace Algorithm.Sorting.Core
 		public void Sort<T>(IList<T> list, SortDirection typeSorting) {
 			Comparer<T> comparer = Comparer<T>.Default;
 			int length = list.Count - 1;
+			bool isSwap = false;
+			
+			for (int i = 0; i < length; i++) {
+				isSwap = false;
 
-			for (int i = 0; i < length; i++)
 				for (int index = 0; index < length - i; index++) {
 					if (typeSorting.Equals(SortDirection.Ascending))
-						if (comparer.Compare(list[index], list[index + 1]) > 0)
+						if (comparer.Compare(list[index], list[index + 1]) > 0) { 
 							Swap(list, index, index + 1);
+							isSwap = true;
+						}
 
 					if (typeSorting.Equals(SortDirection.Descending))
-						if (comparer.Compare(list[index], list[index + 1]) < 0)
+						if (comparer.Compare(list[index], list[index + 1]) < 0) { 
 							Swap(list, index, index + 1);
-				}					
+							isSwap = true;
+						}
+				}
+
+				if (!isSwap)
+					break;
+			}
 		}
 	
 
