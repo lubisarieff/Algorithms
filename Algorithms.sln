@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8F70FD50-4C1A-41EA-B05A-36A56ABAB184}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B0AFCCEA-930B-4262-90B0-D0F161EE7E41}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithm", "src\Algorithm\Algorithm.csproj", "{A63CC111-A226-4D00-BE4E-C8713500C7F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "test\ConsoleApp\ConsoleApp.csproj", "{9C430FE1-7B4F-4DC1-92D2-05BBFB914240}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A63CC111-A226-4D00-BE4E-C8713500C7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A63CC111-A226-4D00-BE4E-C8713500C7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A63CC111-A226-4D00-BE4E-C8713500C7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A63CC111-A226-4D00-BE4E-C8713500C7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C430FE1-7B4F-4DC1-92D2-05BBFB914240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C430FE1-7B4F-4DC1-92D2-05BBFB914240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C430FE1-7B4F-4DC1-92D2-05BBFB914240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C430FE1-7B4F-4DC1-92D2-05BBFB914240}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A63CC111-A226-4D00-BE4E-C8713500C7F7} = {8F70FD50-4C1A-41EA-B05A-36A56ABAB184}
+		{9C430FE1-7B4F-4DC1-92D2-05BBFB914240} = {B0AFCCEA-930B-4262-90B0-D0F161EE7E41}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8426E13-224E-4FEE-ACE8-35C2B7F4EF2A}
+	EndGlobalSection
+EndGlobal
